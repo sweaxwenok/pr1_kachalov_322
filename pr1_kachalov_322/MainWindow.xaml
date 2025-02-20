@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Image x:Name="FunctionImage" Source="image.jpg" Width="200" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+
+        <Label Content="Введите x:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,120,0,0"/>
+        <TextBox x:Name="InputX" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,120,0,0" Width="100"/>
+
+        <Label Content="Введите y:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,150,0,0"/>
+        <TextBox x:Name="InputY" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,150,0,0" Width="100"/>
+
+        <Label Content="Результат:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,180,0,0"/>
+        <TextBox x:Name="OutputResult" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,180,0,0" Width="100" IsReadOnly="True"/>
+
+        <RadioButton x:Name="RadioShX" Content="sh(x)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,210,0,0" GroupName="Functions"/>
+        <RadioButton x:Name="RadioX2" Content="x^2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,240,0,0" GroupName="Functions"/>
+        <RadioButton x:Name="RadioExpX" Content="e^x" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,270,0,0" GroupName="Functions"/>
+
+        <Button x:Name="CalculateButton" Content="Вычислить" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,300,0,0" Width="100" Click="CalculateButton_Click"/>
+        <Button x:Name="ClearButton" Content="Очистить" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,300,0,0" Width="100" Click="ClearButton_Click"/>
     </Grid>
 </Window>
